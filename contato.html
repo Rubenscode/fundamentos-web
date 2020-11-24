@@ -5,48 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
     <h1>Entre em contato</h1>
-    <form>
+    <div class="container-contato">
+        <form>
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <br>
+            <div>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999">
+            </div>
+            <br>
+            <div>
+                <label for="assunto">Assunto:</label>
+                <br>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder="Digite o assunto"></textarea>
+            </div>
+            <br>
+            <div>
+                <span>Curtiu sua missão de vida?</span>
+                <input type="checkbox" id="like" name="like" checked>
+                <label for="like">Sim</label>
+            </div>
+            <br>
+            <button>Enviar</button>
+        </form>
         <div>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            <p>Endereço:</p>
+            <p>Av. Paulista, 1374</p>
+            <p>Bela Vista, São Paulo - SP</p>
+            <p>01310-100</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.639196731196!2d-46.6545938!3d-23.5627036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3aad904a1222eeb2!2sBrazilian%20Financial%20Center!5e0!3m2!1spt-BR!2sbr!4v1605902671808!5m2!1spt-BR!2sbr"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
         </div>
-        <div>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-        </div>
-        <div>
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999">
-        </div>
-        <div>
-            <label for="assunto">Assunto:</label>
-            <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder="Digite o assunto"></textarea>
-        </div>
-        <p>Marque se curtiu o site e sua missão de vida?</p>
-        <div>
-            <input type="checkbox" id="like" name="like" checked>
-            <label for="like">Sim</label>
-        </div>
-        <button>Enviar</button>
-    </form>
-
-    <h2>Endereço:</h2>
-    <p>Av. Paulista, 1374</p>
-    <p>Bela Vista, São Paulo - SP</p>
-    <p>01310-100</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.639196731196!2d-46.6545938!3d-23.5627036!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3aad904a1222eeb2!2sBrazilian%20Financial%20Center!5e0!3m2!1spt-BR!2sbr!4v1605902671808!5m2!1spt-BR!2sbr"
-        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0">
-    </iframe>
+    </div>
 </body>
 
 </html>
