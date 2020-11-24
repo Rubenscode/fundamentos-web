@@ -86,3 +86,7 @@ footer {
 img.social {
     width: 85px;
 }
+
+.required {
+    color: red;
+}
