@@ -82,3 +82,7 @@ form > div:nth-child(1) {
 footer {
     text-align: center;
 }
+
+img.social {
+    width: 85px;
+}
