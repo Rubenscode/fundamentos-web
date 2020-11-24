@@ -72,7 +72,7 @@ h1{
 .container-contato {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    flex-wrap: wrap;
 }
 
 form > div:nth-child(1) {
@@ -83,10 +83,33 @@ footer {
     text-align: center;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 img.social {
     width: 85px;
 }
 
 .required {
     color: red;
+}
+
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form > fieldset > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+form > fieldset label {
+    margin-bottom: 1px;
+}
+
+form > fieldset > button {
+    margin-top: 15px;
 }
