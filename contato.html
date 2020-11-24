@@ -18,34 +18,36 @@
     <h1>Entre em contato</h1>
     <div class="container-contato">
         <form>
-            <div>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-            </div>
-            <br>
-            <div>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-            </div>
-            <br>
-            <div>
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999">
-            </div>
-            <br>
-            <div>
-                <label for="assunto">Assunto:</label>
+            <fieldset>
+                <legend>Zodiac</legend>
+                <div>
+                    <label for="nome">Nome:</label><span class="required"> *</span><br>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autofocus>
+                </div>
                 <br>
-                <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder="Digite o assunto"></textarea>
-            </div>
-            <br>
-            <div>
-                <span>Curtiu sua missão de vida?</span>
-                <input type="checkbox" id="like" name="like" checked>
-                <label for="like">Sim</label>
-            </div>
-            <br>
-            <button>Enviar</button>
+                <div>
+                    <label for="email">E-mail:</label><span class="required"> *</span><br>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required autofocus>
+                </div>
+                <br>
+                <div>
+                    <label for="telefone">Telefone:</label><span class="required"> *</span><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999" required autofocus>
+                </div>
+                <br>
+                <div>
+                    <label for="assunto">Assunto:</label required><span class="required"> *</span><br>
+                    <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder="Digite o assunto" required autofocus></textarea>
+                </div>
+                <br>
+                <div>
+                    <span>Curtiu sua missão de vida?</span>
+                    <input type="checkbox" id="like" name="like" checked>
+                    <label for="like">Sim</label>
+                </div>
+                <br>
+                <button>Enviar</button>
+            </fieldset>
         </form>
         <div>
             <p>Endereço:</p>
